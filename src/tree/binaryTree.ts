@@ -6,11 +6,11 @@ export class BinaryTreeNode<T> extends TreeNode<T> {
     }
 
     get left() {
-        return this.children[0]
+        return this.children[0] as BinaryTreeNode<T>
     }
 
     get right() {
-        return this.children[1]
+        return this.children[1] as BinaryTreeNode<T>
     }
 
     set left(val) {
